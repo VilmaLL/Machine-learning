@@ -117,11 +117,96 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 
+'''
 
+>> "Skapa en layout för en Dash-app där användaren kan söka efter något via en dropdown-sökfält. 
+    Layouten ska ha en huvudrubrik centrerad högst upp, en dropdown centrerad under rubriken, 
+    en ruta under dropdownen som visar statistik eller information om det valda objektet och 
+    två rutor bredvid varandra där rekommendationer visas som listor."
 
-## TODO add a card for the movie_title with stats  
-## TODO add a toggle-down menue for the movie-title
-## TODO snazz it up a bit more with the layout?
-## TODO write the report
-## The card for most similarily rated movies is only useful for movies with a lower rating. For Higher rated movies(>3.0) the two cards show the same movies
-## An improvement to the dash would be to add movie posters to the recommended movies
+>> ChatGPT
+import dash
+from dash import html, dcc
+
+app = dash.Dash(__name__)
+app.title = "Title"
+
+app.layout = html.Div(
+    style={
+        'fontFamily': 'Arial, sans-serif',
+        'backgroundColor': '#f4f6f9',
+        'minHeight': '100vh',
+        'padding': '20px'
+    },
+    children=[
+        # Header
+        html.H1("Projektets Dashboard", 
+                style={
+                    'textAlign': 'center',
+                    'color': '#2c3e50',
+                    'marginBottom': '30px'
+                }
+        ),
+        
+        # Dropdown-sökfält
+        html.Div([
+            dcc.Dropdown(
+                id='input-dropdown',
+                options=[],  # Tom, kan fyllas senare
+                placeholder='Välj något...',
+                style={'width': '70%', 'marginRight': '10px'}
+            ),
+        ], style={
+            'textAlign': 'center', 
+            'marginBottom': '30px'
+        }),
+
+        # Statistikruta
+        html.Div(id='stats-output', style={
+            'backgroundColor': 'white',
+            'padding': '20px',
+            'borderRadius': '12px',
+            'boxShadow': '0 4px 10px rgba(0,0,0,0.1)',
+            'marginBottom': '20px',
+            'minHeight': '100px'
+        }),
+
+        # Två rekommendationsrutor
+        html.Div([
+            html.Div([
+                html.H3("Rekommendation 1", style={'color': '#2c3e50'}),
+                html.Ul(id='rec1-list', style={'listStyleType': 'none', 'padding': 0})
+            ], style={
+                'backgroundColor': 'white',
+                'padding': '20px',
+                'borderRadius': '12px',
+                'boxShadow': '0 4px 10px rgba(0,0,0,0.1)',
+                'width': '100%',
+                'maxWidth': '45%',
+                'marginBottom': '20px'
+            }),
+
+            html.Div([
+                html.H3("Rekommendation 2", style={'color': '#2c3e50'}),
+                html.Ul(id='rec2-list', style={'listStyleType': 'none', 'padding': 0})
+            ], style={
+                'backgroundColor': 'white',
+                'padding': '20px',
+                'borderRadius': '12px',
+                'boxShadow': '0 4px 10px rgba(0,0,0,0.1)',
+                'width': '100%',
+                'maxWidth': '45%',
+                'marginBottom': '20px'
+            }),
+        ], style={
+            'display': 'flex',
+            'justifyContent': 'space-between',
+            'gap': '20px',
+            'flexWrap': 'wrap'
+        }),
+    ]
+)
+
+if __name__ == "__main__":
+    app.run_server(debug=True)
+'''
