@@ -1,9 +1,6 @@
 import pandas as pd
 
 def get_df():
-    path_movies = r"C:\Users\vilma\Machine-learning\Assignments\ml-latest\ml-latest\movies.csv"
-    path_ratings = r"C:\Users\vilma\Machine-learning\Assignments\ml-latest\ml-latest\ratings.csv"
-    path_tags = r"C:\Users\vilma\Machine-learning\Assignments\ml-latest\ml-latest\tags.csv"
 
     dtype = {
         "userId": "int32",
@@ -14,9 +11,9 @@ def get_df():
         "title": "string"
     }
 
-    movies = pd.read_csv(path_movies, dtype=dtype)
-    ratings = pd.read_csv(path_ratings, usecols=["userId", "movieId", "rating"], dtype=dtype)
-    tags = pd.read_csv(path_tags, usecols=["userId", "movieId", "tag"], dtype=dtype)
+    movies = pd.read_csv(".../movies.csv", dtype=dtype)
+    ratings = pd.read_csv(".../ratings.csv", usecols=["userId", "movieId", "rating"], dtype=dtype)
+    tags = pd.read_csv(".../tags.csv", usecols=["userId", "movieId", "tag"], dtype=dtype)
 
     movies["title"] = movies["title"].astype("category")
 
