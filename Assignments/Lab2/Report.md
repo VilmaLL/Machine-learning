@@ -26,5 +26,15 @@ Results
 
 The ResNet18 model predicted The Images as follows:
 
+Image1: {'class_index': '386', 'class_id': 'n02504458', 'class_name': 'African_elephant', 'confidence': 0.5068271160125732}
+Image2: {'class_index': '344', 'class_id': 'n02398521', 'class_name': 'hippopotamus', 'confidence': 0.999891996383667}
+Image3: {'class_index': '555', 'class_id': 'n03345487', 'class_name': 'fire_engine', 'confidence': 0.9979885816574097}
+Image4: {'class_index': '407', 'class_id': 'n02701002', 'class_name': 'ambulance', 'confidence': 0.9393348693847656}
+Image5: {'class_index': '402', 'class_id': 'n02676566', 'class_name': 'acoustic_guitar', 'confidence': 0.9951629638671875}
+Image6: {'class_index': '889', 'class_id': 'n04536866', 'class_name': 'violin', 'confidence': 0.9552302956581116}
 
+Image7: {'class_index': '708', 'class_id': 'n03903868', 'class_name': 'pedestal', 'confidence': 0.4729427993297577}
+
+
+![All_layers_CAM](Images/cams_all_layers_output.png)
 
