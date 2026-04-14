@@ -32,3 +32,4 @@ def get_recommendations_ratings(mean_ratings,recommendations, title):
 def get_title_rating(mean_ratings, title):
     title_rating = mean_ratings.get(title)
     return title_rating
+# Add ratings to the recommendations, collaborative filtering, eller viktning

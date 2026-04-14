@@ -119,12 +119,12 @@ if __name__ == '__main__':
 
 '''
 
- "Skapa en layout för en Dash-app där användaren kan söka efter något via en dropdown-sökfält. 
+>> "Skapa en layout för en Dash-app där användaren kan söka efter något via en dropdown-sökfält. 
     Layouten ska ha en huvudrubrik centrerad högst upp, en dropdown centrerad under rubriken, 
     en ruta under dropdownen som visar statistik eller information om det valda objektet och 
     två rutor bredvid varandra där rekommendationer visas som listor."
 
-ChatGPT:
+>> ChatGPT
 import dash
 from dash import html, dcc
 

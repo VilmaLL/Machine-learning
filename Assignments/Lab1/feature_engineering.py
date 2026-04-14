@@ -37,3 +37,4 @@ def nearest_neighbors_model(tfidf_matrix, n_neighbors=50):
 
 def get_nearest_neighbors(movie_index, tfidf_matrix, nn, top_n=50):
     distances, indices = nn.kneighbors(tfidf_matrix[movie_index:movie_index+1], n_neighbors=top_n+1)
+    return indices[0][1:], distances[0][1:]
