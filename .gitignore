@@ -1,0 +1,16 @@
+# Virtual environments
+ML_venv311/
+venv/
+
+# Datasets
+Assignments/Lab1/ml-latest/
+*.csv
+*.zip
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
