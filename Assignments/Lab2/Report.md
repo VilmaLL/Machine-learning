@@ -27,18 +27,31 @@ Results
 The ResNet18 model predicted The Images as follows:
 
 ![Elephant_cam](Images/elephant_cam.png)
+
 Image1: {'class_index': '386', 'class_id': 'n02504458', 'class_name': 'African_elephant', 'confidence': 0.5068271160125732}
+
 ![Hippo_cam](Images/hippo_cam.png)
+
 Image2: {'class_index': '344', 'class_id': 'n02398521', 'class_name': 'hippopotamus', 'confidence': 0.999891996383667}
+
 ![Firetruck_cam](Images/firetruck_cam.png)
+
 Image3: {'class_index': '555', 'class_id': 'n03345487', 'class_name': 'fire_engine', 'confidence': 0.9979885816574097}
+
 ![Ambulance_cam](Images/ambulance_cam.png)
+
 Image4: {'class_index': '407', 'class_id': 'n02701002', 'class_name': 'ambulance', 'confidence': 0.9393348693847656}
+
 ![Guitar_cam](Images/guitar_cam.png)
+
 Image5: {'class_index': '402', 'class_id': 'n02676566', 'class_name': 'acoustic_guitar', 'confidence': 0.9951629638671875}
+
 ![Violin_cam](Images/violin_cam.png)
+
 Image6: {'class_index': '889', 'class_id': 'n04536866', 'class_name': 'violin', 'confidence': 0.9552302956581116}
+
 ![Statue_cam](Images/statue_cam.png)
+
 Image7: {'class_index': '708', 'class_id': 'n03903868', 'class_name': 'pedestal', 'confidence': 0.4729427993297577}
 
 
