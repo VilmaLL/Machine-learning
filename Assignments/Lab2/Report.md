@@ -1,14 +1,14 @@
-Interpretability of CNN with ImageNet class index
+# Interpretability of CNN with ImageNet class index
 
 
 
-Introduction
+## Introduction
 
 This project aims to investigate the interpretability of a Convolutional Neural Network with the help of pretrained CNN model; ResNet18, a Class Atribution Map; torch-cam, and a dataset containing 1000 classes; ImageNet.
 
 
 
-Method
+## Method
 
 For this examination seven images where used.
 
@@ -27,7 +27,7 @@ The third fase of the investigation used an image which class was not included i
 
 
 
-Results
+## Results
 
 The ResNet18 model predicted The Images as follows:
 
@@ -65,7 +65,7 @@ The side by side visual of the different layers:
 
 
 
-Discussion
+## Discussion
 
 The model held a high confidence level, above 95% for the initial 6 images apart from the African elephant which was only predicted with a 50,68% confidence. This deviance is presumed to be due to the similarity between the African elephant and the Indian elephant in the class index.
 The model correctly predicted all the images despite the similar traits in the positives and negatives.
@@ -86,7 +86,7 @@ The final image, predicted to be a pedestal, overlayed with the heatmap shows th
 
 
 
-Sources
+## Sources
 
 [1] African elephant (https://unsplash.com/photos/brown-elephant-on-green-grass-field-during-daytime-P7L5011nD5s)
 
