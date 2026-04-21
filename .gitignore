@@ -1,6 +1,12 @@
 # Virtual environments
 ML_venv311/
-venv/
+ML_venv/
+.venv/
+
+# Image files
+Assignments/Lab2/Images/
+Assignments/Lab2/Citations.md
+
 
 # Datasets
 Assignments/Lab1/ml-latest/
