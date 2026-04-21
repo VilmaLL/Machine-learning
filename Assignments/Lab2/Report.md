@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This project aims to investigate the interpretability of a Convolutional Neural Network with the help of pretrained CNN model; ResNet18, a Class Atribution Map; torch-cam, and a dataset containing 1000 classes; ImageNet.
+This project investigates the interpretability of a Convolutional Neural Network using a pretrained CNN model, ResNet18, class activation mapping methods via torchcam and the ImageNet dataset containing 1000 object classes.
 
 
 
@@ -12,18 +12,18 @@ This project aims to investigate the interpretability of a Convolutional Neural 
 
 For this examination seven images where used.
 
-The first fase of the investigation was to produce a positive and a negative image for three classes. The chosen classes were "African elephant", "Fire engine" and "Acoustic guitar". Three positive images[1][2][3] were porduced. For the Negative images, the correct classification would be "Hippopotamus", "Ambulance" and "Violin".[4][5][6]
-These Negatives were chosen for there similar traits to the positives. Aiming to produce the most possible confusion for the model. 
-These six images were run though the CAM_extractor with target_layer "layer4" and visualized using matplotlibs imshow().
+The first phase of the investigation was to produce a positive and a negative image for three classes. The chosen classes were "African elephant", "Fire engine" and "Acoustic guitar". Three positive images[1][2][3] were produced. For the Negative images, the correct classification would be "Hippopotamus", "Ambulance" and "Violin".[4][5][6]
+These Negatives were chosen for their similar traits to the positives. Incresing the likelihood of model confusion. 
+These six images were run through the CAM_extractor with target_layer "layer4" and visualized using matplotlibs imshow().
 
-The produced cams where overlayed ove the original images to give a cleared visualization of the results.
+The produced cams where overlayed over the original images to give a clearer visualization of the results.
 
 A Predict_class function was created which used the ImageNet Class Index to return a dictionary containing the predicted class index, class id, class name and confidence of prediction.
 Each image was run through the function and the resulting predictions printed.
 
-The second fase of the investigation looked at the different layers of the cam. Using two of the positive images, all four target layers' cams were produced and visualized side by side to show the progression of the layers. This fase aimed to investigate the different details the CNN would focus on for the classification.
+The second phase of the investigation looked at the different layers of the cam. Using two of the positive images, all four target layers' cams were produced and visualized side by side to show the progression of the layers. This fase aimed to investigate the different details the CNN would focus on for the classification.
 
-The third fase of the investigation used an image which class was not included in the ImageNet Class Index [7]. The image was run through the layer4 cam_extractor and predict_class function. This investigation aimed to deduce the reasoning for the CNN's classification of an unknown class.
+The third phase of the investigation used an image which class was not included in the ImageNet Class Index [7]. The image was run through the layer4 cam_extractor and predict_class function. This investigation aimed to analyze how the model responds to unknown class inputs and to infer the reasoning behind its classification decision.
 
 
 
@@ -67,7 +67,7 @@ The side by side visual of the different layers:
 
 ## Discussion
 
-The model held a high confidence level, above 95% for the initial 6 images apart from the African elephant which was only predicted with a 50,68% confidence. This deviance is presumed to be due to the similarity between the African elephant and the Indian elephant in the class index.
+The model held a high confidence level, above 95% for five the initial six images, the exception being the African elephant which was only predicted with a 50.68% confidence. This deviance is presumed to be due to the visual similarity between the African elephant and the Indian elephant, both present in the class index.
 The model correctly predicted all the images despite the similar traits in the positives and negatives.
 The heatmaps show that for the elephant the identifying traits are the tusks and the trunk.
 For the hippo it's the little ears.
@@ -82,7 +82,7 @@ The second layer gave more attention to the patterns and specified parts of the 
 The third layer starts being less pixelated and more focused on the different parts of the objective.
 The fourth layer is even less pixelated and has clearly located a classifying part of the objective.
 
-The final image, predicted to be a pedestal, overlayed with the heatmap shows that the CNN focused on the leg of the statue. Possibly taking it's bent shape and the stone texture as similar traits to a pedestal. But the heatmap is scattered over the whole picture. Along with the poor confidence level it indicates that the model had a hard time identifying this image. But the prediction is not too bad. The is a similarity between the statue and a pedestal. Espesially in the stone texture.
+The final image, not part of the class index, incorrectly predicted to be a pedestal, overlayed with the heatmap shows that the models primary focus was the lower part of the statue. Likely due to its curved shape and stone-like texture, which resembles features commonly associated with pedestal structures. But the heatmap is scattered over the whole picture. Along with the poor confidence level it indicates that the model had a hard time identifying this image. But the prediction is not completely unreasonable as there is a similarity between the statue and a pedestal, particularily in material and base structure.
 
 
 
