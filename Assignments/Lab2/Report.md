@@ -31,37 +31,36 @@ The third phase of the investigation used an image which class was not included 
 
 The ResNet18 model predicted The Images as follows:
 
-![Elephant_cam](Images/elephant_cam.png)
+![Elkhound_cam](Images/elkhound_cam.png)
 
-Image1: {'class_index': '386', 'class_id': 'n02504458', 'class_name': 'African_elephant', 'confidence': 0.5068271160125732}
+Image1: {'class_index': 174, 'class_id': 'n02091467', 'class_name': 'Norwegian_elkhound', 'confidence': 0.8044467568397522}
 
-![Hippo_cam](Images/hippo_cam.png)
+![Chinchilla_cam](Images/chinchilla_cam.png)
 
-Image2: {'class_index': '344', 'class_id': 'n02398521', 'class_name': 'hippopotamus', 'confidence': 0.999891996383667}
+Image2: {'class_index': 174, 'class_id': 'n02091467', 'class_name': 'Norwegian_elkhound', 'confidence': 0.7822440266609192}
 
-![Firetruck_cam](Images/firetruck_cam.png)
+![Pomegranate_cam](Images/pomegranate_cam.png)
 
-Image3: {'class_index': '555', 'class_id': 'n03345487', 'class_name': 'fire_engine', 'confidence': 0.9979885816574097}
+Image3: {'class_index': 957, 'class_id': 'n07768694', 'class_name': 'pomegranate', 'confidence': 0.9994410872459412}
 
-![Ambulance_cam](Images/ambulance_cam.png)
+![Pithaya_cam](Images/pithaya_cam.png)
 
-Image4: {'class_index': '407', 'class_id': 'n02701002', 'class_name': 'ambulance', 'confidence': 0.9393348693847656}
+Image4: {'class_index': 957, 'class_id': 'n07768694', 'class_name': 'pomegranate', 'confidence': 0.133589506149292}
 
-![Guitar_cam](Images/guitar_cam.png)
+![Speedboat_cam](Images/speedboat_cam.png)
 
-Image5: {'class_index': '402', 'class_id': 'n02676566', 'class_name': 'acoustic_guitar', 'confidence': 0.9951629638671875}
+Image5: {'class_index': 814, 'class_id': 'n04273569', 'class_name': 'speedboat', 'confidence': 0.9994126558303833}
 
-![Violin_cam](Images/violin_cam.png)
+![Yacht_cam](Images/yacht_cam.png)
 
-Image6: {'class_index': '889', 'class_id': 'n04536866', 'class_name': 'violin', 'confidence': 0.9552302956581116}
+Image6: {'class_index': 814, 'class_id': 'n04273569', 'class_name': 'speedboat', 'confidence': 0.6126159429550171}
 
-![Statue_cam](Images/statue_cam.png)
+![Dragon_cam](Images/dragon_cam.png)
 
-Image7: {'class_index': '708', 'class_id': 'n03903868', 'class_name': 'pedestal', 'confidence': 0.4729427993297577}
-
+Image7: {'class_index': 354, 'class_id': 'n02437312', 'class_name': 'Arabian_camel', 'confidence': 0.867834746837616}
 
 The side by side visual of the different layers:
-![All_layers_CAM](Images/cams_all_layers_output.png)
+![All_layers_CAM](Images/all_layers_cam.png)
 
 
 
@@ -88,16 +87,17 @@ The final image, not part of the class index, incorrectly predicted to be a pede
 
 ## Sources
 
-[1] African elephant (https://unsplash.com/photos/brown-elephant-on-green-grass-field-during-daytime-P7L5011nD5s)
+[1] Norwegian elkhound (https://unsplash.com/photos/a-dog-laying-in-the-grass-on-a-sunny-day-fSb9bj7-25k)
 
-[2] Fire engine (https://unsplash.com/photos/a-fire-truck-on-the-street-egergv8fSG8)
+[2] Pomegranate (https://unsplash.com/photos/red-round-fruit-on-black-surface-SCMnIJV3DrQ)
 
-[3] Acoustic guitar (https://unsplash.com/photos/brown-acoustic-guitar-C8gib_msapY)
 
-[4] Hippopotamus (https://unsplash.com/photos/a-couple-of-hippos-standing-next-to-each-other-Q_HLuU0Xv8Q)
+[3] Speedboat (https://unsplash.com/photos/white-and-red-boat-on-water-during-daytime-y0Br6D28Lkg)
 
-[5] Ambulance (https://unsplash.com/photos/an-ambulance-driving-down-a-city-street-next-to-tall-buildings-l_ov5A67rI4)
+[4] Chinchilla (https://unsplash.com/photos/person-holding-gray-and-white-rabbit-6vU-kvHdGRI)
 
-[6] Violin (https://unsplash.com/photos/brown-violin-on-white-textile-d9_2kPJBG0U)
+[5] Pithaya (https://unsplash.com/photos/a-dragon-fruit-cut-in-half-on-a-white-background-IbRkYrIgrWo)
 
-[7] Statue (https://unsplash.com/photos/a-statue-of-a-person-ZR8WQ5fDbo8)
+[6] Yacht (https://unsplash.com/photos/birds-eye-photography-of-yacht-on-body-of-water-XZOO6QHub60)
+
+[7] Dragon (https://unsplash.com/photos/a-dragon-statue-on-top-of-a-building-eFyVtxyQA34)
