@@ -60,6 +60,7 @@ Image6: {'class_index': 814, 'class_id': 'n04273569', 'class_name': 'speedboat',
 Image7: {'class_index': 354, 'class_id': 'n02437312', 'class_name': 'Arabian_camel', 'confidence': 0.867834746837616}
 
 The side by side visual of the different layers:
+
 ![All_layers_CAM](Images/all_layers_cam.png)
 
 
